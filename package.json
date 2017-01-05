@@ -1,27 +1,30 @@
 {
-  "name": "guppy-commit-msg",
-  "version": "0.2.0",
-  "description": "Installs a commit-msg git-hook only, for guppy packages",
+  "name": "guppy-commit-msg-warn",
+  "version": "0.2.3",
+  "description": "Installs a commit-msg git-hook only, for guppy packages. Warns and allows npm install to continue if git repo is not found",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "guppy commit-msg"
+    "postinstall": "guppy commit-msg -w"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/therealklanni/guppy-commit-msg.git"
+    "url": "https://github.com/wheller/guppy-commit-msg-warn.git"
   },
   "keywords": [
     "guppy",
     "commit-msg"
   ],
   "author": "Kevin Lanni (https://github.com/therealklanni)",
+  "contributors": [
+    "Bill Heller (https://github.com/wheller)"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/therealklanni/guppy-commit-msg/issues"
+    "url": "https://github.com/wheller/guppy-commit-msg-warn/issues"
   },
-  "homepage": "https://github.com/therealklanni/guppy-commit-msg",
+  "homepage": "https://github.com/wheller/guppy-commit-msg-warn",
   "dependencies": {
-    "guppy-cli": "^1.0.1"
+    "guppy-cli": "https://github.com/wheller/guppy-cli/archive/master.tar.gz"
   }
 }
